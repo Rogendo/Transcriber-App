@@ -9,18 +9,22 @@
 		spacing:20
 
 		Label:
+			text:"Transcribed message appears here "
+			font_size:16
+			color:"grey"		
+		Label:
 			id:lebal_1
-			text:"this is what was said: "
+			
 			color:"black"
-			font_size:12
+			font_size:20
 
 		RoundedButton:
 			text:"Transcribe"
 			id:btn_1
-			font_size:14
+			font_size:25
 			pos_hint:{'center_x':0.5}
-			size_hint:.15,.12
-
+			size_hint:.20,.17
+			on_press: root.transcriber_click()	
 
 <RoundedButton@Button>
 	background_color:(0,0,0,0)
